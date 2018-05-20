@@ -1,0 +1,501 @@
+Age,Gender,Education Level,Geographic Location
+48,0,Bachelor,Marshall Islands
+72,0,Phd,Canada
+60,1,High School,Nicaragua
+24,1,Masters,Czech Republic
+22,0,High School,American Samoa
+76,1,Masters,Ghana
+12,0,Phd,Spain
+41,0,Bachelor,Lao People's Democratic Republic
+36,1,Masters,Saint Helena
+18,0,Masters,Malaysia
+31,0,Bachelor,Dominica
+38,0,Phd,Zimbabwe
+59,1,Bachelor,Indonesia
+52,0,Phd,Germany
+49,0,High School,Chad
+73,0,Phd,Sierra Leone
+65,1,High School,Kiribati
+53,0,Phd,Estonia
+78,1,Phd,Mozambique
+75,0,High School,Peru
+77,1,High School,Solomon Islands
+67,1,High School,Uganda
+29,1,High School,Republic of Korea
+68,1,High School,Democratic People's Republic of Korea
+71,1,Masters,Northern Mariana Islands
+56,0,Phd,Sri Lanka
+34,1,Masters,Ireland
+42,0,Masters,Barbados
+39,0,High School,Albania
+45,0,High School,Iran (Islamic Republic of)
+15,1,High School,Bulgaria
+32,0,Bachelor,Greenland
+35,0,Phd,Portugal
+80,1,High School,Russian Federation
+14,0,Phd,Jordan
+61,1,High School,Cyprus
+13,1,Phd,Liechtenstein
+21,0,High School,Zambia
+40,0,Masters,Egypt
+46,0,Masters,Belize
+54,0,High School,Fiji
+28,0,Bachelor,Tuvalu
+69,1,High School,Åland Islands
+63,0,High School,Cuba
+20,0,Phd,Paraguay
+26,1,Phd,Gabon
+62,0,High School,Djibouti
+17,1,Masters,Honduras
+37,0,Phd,United Republic of Tanzania
+50,0,High School,Vanuatu
+47,0,High School,Denmark
+64,0,Masters,Yemen
+55,0,High School,Congo
+70,0,Masters,Malawi
+16,0,Phd,Jersey
+19,1,Masters,Niger
+57,0,Phd,Nauru
+43,0,Masters,Seychelles
+27,0,High School,Poland
+25,1,Phd,Cook Islands
+10,0,Phd,Mauritania
+44,1,Phd,Cambodia
+33,0,Masters,Mexico
+79,0,Phd,Bolivia (Plurinational State of)
+66,0,Masters,Sao Tome and Principe
+58,0,Masters,Bhutan
+51,1,Phd,Brunei Darussalam
+11,1,High School,Tunisia
+23,0,Phd,El Salvador
+30,0,Phd,Saint Martin (French part)
+74,1,Masters,Algeria
+34,0,High School,Afghanistan
+27,0,Masters,Montenegro
+54,0,Masters,Angola
+75,0,High School,Belarus
+47,1,Masters,Eritrea
+75,0,Masters,State of Palestine
+47,1,High School,Colombia
+13,0,High School,Aruba
+70,1,Bachelor,Dominican Republic
+74,1,Masters,French Polynesia
+75,1,Bachelor,Martinique
+26,0,High School,South Sudan
+77,0,Masters,Mauritius
+69,1,High School,Anguilla
+21,1,Phd,Myanmar
+17,0,Masters,Bonaire Sint Eustatius and Saba
+45,0,Masters,Norway
+54,0,High School,Benin
+62,0,High School,France
+52,0,Phd,Austria
+38,1,Phd,Comoros
+34,1,High School,Pitcairn
+20,1,High School,San Marino
+65,1,Masters,Georgia
+75,1,Phd,Saint Pierre and Miquelon
+67,1,Phd,Syrian Arab Republic
+41,0,Masters,Suriname
+52,1,High School,Tajikistan
+54,0,High School,China
+15,0,Bachelor,United Kingdom of Great Britain and Northern Ireland
+13,1,Masters,Guinea-Bissau
+52,1,Bachelor,South Africa
+18,1,Masters,Mali
+10,0,Masters,Somalia
+43,1,Masters,China Macao Special Administrative Region
+28,0,High School,Kazakhstan
+64,0,High School,United States Virgin Islands
+22,1,High School,R?union
+56,0,High School,United States of America
+66,0,High School,Trinidad and Tobago
+61,1,Phd,Iceland
+79,0,High School,Western Sahara
+25,1,High School,Chile
+44,0,High School,Swaziland
+33,0,High School,British Virgin Islands
+22,1,Phd,Saint Vincent and the Grenadines
+63,1,Bachelor,Channel Islands
+33,1,Bachelor,The former Yugoslav Republic of Macedonia
+28,0,Masters,Qatar
+75,0,Phd,Guam
+24,1,High School,Cabo Verde
+62,0,High School,Equatorial Guinea
+51,1,High School,Mongolia
+38,0,Bachelor,Timor-Leste
+68,0,Bachelor,New Zealand
+11,0,Phd,Ecuador
+42,1,Masters,Gambia
+36,1,Phd,Jamaica
+77,0,Phd,Philippines
+31,1,Bachelor,Maldives
+47,0,Phd,Kenya
+70,0,Bachelor,Slovenia
+32,1,Phd,Tokelau
+48,1,High School,Falkland Islands (Malvinas)
+56,1,Bachelor,Palau
+58,1,Phd,Lithuania
+41,0,Bachelor,Croatia
+33,1,Phd,Sark
+56,0,Phd,Bosnia and Herzegovina
+33,0,High School,Burkina Faso
+40,1,High School,Ukraine
+34,1,Phd,Bahamas
+67,1,Masters,Finland
+20,0,Bachelor,Guinea
+74,1,Bachelor,Central African Republic
+35,0,High School,Rwanda
+10,0,Phd,Libya
+11,0,Bachelor,French Guiana
+31,1,Bachelor,Saint Barthélemy
+55,1,Phd,United Arab Emirates
+61,0,Bachelor,Guadeloupe
+77,1,Bachelor,Singapore
+35,1,High School,Kuwait
+24,1,High School,Switzerland
+51,0,Masters,Democratic Republic of the Congo
+18,1,Phd,Latvia
+25,1,Bachelor,Uzbekistan
+16,0,Phd,Oman
+34,0,Bachelor,Sweden
+62,1,Bachelor,Saint Lucia
+26,1,Masters,Thailand
+37,1,Bachelor,Sint Maarten (Dutch part)
+54,1,Masters,Lesotho
+74,1,High School,Isle of Man
+18,0,Masters,Saint Kitts and Nevis
+71,1,Bachelor,Israel
+35,0,Phd,Grenada
+38,1,Masters,Italy
+74,0,High School,Haiti
+31,1,High School,Nepal
+56,1,High School,Sudan
+50,1,Bachelor,Niue
+55,0,Bachelor,Cayman Islands
+17,0,Bachelor,Pakistan
+53,0,Phd,Puerto Rico
+26,0,Phd,Nigeria
+16,1,Masters,Wallis and Futuna Islands
+12,0,Masters,Samoa
+29,0,High School,Kyrgyzstan
+50,0,Phd,Holy See
+37,1,Bachelor,Lebanon
+13,1,Masters,Curaçao
+56,1,Bachelor,Antigua and Barbuda
+72,0,High School,Botswana
+21,0,Phd,Luxembourg
+35,1,Phd,Senegal
+72,1,Masters,Burundi
+40,1,Masters,Svalbard and Jan Mayen Islands
+13,1,Bachelor,China Hong Kong Special Administrative Region
+27,0,Bachelor,Japan
+65,0,Masters,Greece
+39,0,Masters,Madagascar
+28,1,Phd,Togo
+48,1,High School,Côte d'Ivoire
+22,0,Masters,Romania
+27,1,Phd,Bahrain
+74,0,High School,Turkey
+65,0,High School,Belgium
+37,0,Masters,Hungary
+54,1,Masters,Brazil
+36,1,Masters,Venezuela (Bolivarian Republic of)
+50,0,High School,Guatemala
+63,0,Bachelor,New Caledonia
+13,0,High School,Argentina
+44,0,Masters,Namibia
+35,0,Masters,Guernsey
+19,1,Phd,Bangladesh
+31,1,High School,Netherlands
+68,1,Phd,Ethiopia
+40,1,Phd,Papua New Guinea
+34,0,Phd,Iraq
+28,0,High School,Saudi Arabia
+53,1,Phd,Republic of Moldova
+48,0,Phd,Turks and Caicos Islands
+57,1,Bachelor,Slovakia
+15,0,Masters,Costa Rica
+22,1,Masters,India
+29,1,Bachelor,Bermuda
+40,0,Phd,Turkmenistan
+46,0,High School,Viet Nam
+10,0,High School,Liberia
+61,1,Bachelor,Micronesia (Federated States of)
+65,1,High School,Malta
+28,1,Bachelor,Panama
+12,1,Phd,Mayotte
+42,0,High School,Armenia
+38,1,High School,Norfolk Island
+58,0,Phd,Cameroon
+26,1,Masters,Morocco
+38,0,Phd,Uruguay
+13,0,High School,Monaco
+47,0,Bachelor,Gibraltar
+48,1,Bachelor,Azerbaijan
+29,0,Phd,Montserrat
+40,1,Bachelor,Australia
+10,1,Masters,Andorra
+58,0,Bachelor,Guyana
+12,1,High School,Faeroe Islands
+46,0,Bachelor,Tonga
+46,1,Bachelor,Serbia
+37,1,High School,Mayotte
+35,0,Bachelor,Niue
+46,1,Phd,Bulgaria
+43,1,Phd,Equatorial Guinea
+69,1,Masters,Viet Nam
+45,1,Phd,Marshall Islands
+78,0,Masters,Gambia
+51,1,Masters,Botswana
+70,0,Bachelor,South Sudan
+32,1,High School,Botswana
+67,1,Bachelor,Puerto Rico
+74,1,Bachelor,Lao People's Democratic Republic
+79,0,High School,French Polynesia
+60,1,Masters,Åland Islands
+66,0,Bachelor,Ireland
+42,0,Phd,Montserrat
+76,1,High School,Thailand
+16,0,Bachelor,Guinea-Bissau
+64,0,Bachelor,Puerto Rico
+50,1,Bachelor,Saint Helena
+18,1,Phd,Ecuador
+26,0,Phd,Armenia
+52,0,Phd,Liechtenstein
+39,0,High School,Netherlands
+62,1,Bachelor,Sark
+14,1,Phd,Ethiopia
+76,1,High School,Niue
+78,0,Phd,Burkina Faso
+75,0,Phd,Argentina
+70,1,Phd,Germany
+65,0,High School,Cameroon
+21,0,Masters,Turks and Caicos Islands
+58,1,Phd,Italy
+67,1,Masters,Suriname
+45,0,Phd,Saudi Arabia
+33,1,Masters,Cabo Verde
+55,0,Phd,Guadeloupe
+28,0,Masters,Bahamas
+16,1,Bachelor,Comoros
+60,0,Masters,Kuwait
+13,0,Phd,Republic of Korea
+23,0,High School,Denmark
+52,0,Masters,India
+15,1,High School,Guadeloupe
+53,1,Phd,Congo
+47,0,High School,Sudan
+58,0,Masters,Madagascar
+65,0,Masters,Antigua and Barbuda
+30,1,Masters,New Caledonia
+21,1,High School,Yemen
+34,0,Masters,Papua New Guinea
+72,1,Masters,Switzerland
+57,1,Masters,Bahamas
+80,0,Bachelor,Bonaire Sint Eustatius and Saba
+23,0,High School,Panama
+51,1,Phd,Fiji
+49,0,Bachelor,Tajikistan
+22,0,Masters,Saint Helena
+71,0,Phd,Marshall Islands
+38,0,Masters,Bolivia (Plurinational State of)
+47,1,Masters,Croatia
+54,0,Bachelor,Mongolia
+76,0,High School,Cyprus
+17,0,Masters,American Samoa
+73,0,Bachelor,Belarus
+51,1,Bachelor,Niger
+78,0,High School,Liechtenstein
+73,0,High School,Armenia
+16,0,High School,Andorra
+18,1,High School,Greece
+20,1,Masters,Belgium
+10,1,Bachelor,Greenland
+67,0,Masters,Gabon
+13,0,High School,South Sudan
+16,1,Masters,United States of America
+78,0,Bachelor,Malawi
+19,1,Bachelor,Saint Pierre and Miquelon
+18,0,Bachelor,Singapore
+73,1,High School,Guinea
+12,1,Phd,Holy See
+21,1,Phd,Austria
+67,1,High School,British Virgin Islands
+53,0,High School,Slovenia
+34,0,Masters,Trinidad and Tobago
+73,1,High School,Paraguay
+48,0,Phd,Bhutan
+21,1,Phd,Burundi
+34,1,Phd,New Caledonia
+60,1,High School,New Zealand
+65,0,Masters,Tajikistan
+72,0,Masters,Paraguay
+46,1,Phd,Burkina Faso
+36,1,Masters,Solomon Islands
+69,1,Phd,Tunisia
+26,1,High School,Russian Federation
+28,0,Masters,Suriname
+45,1,Phd,Ethiopia
+26,1,Phd,Trinidad and Tobago
+39,1,Masters,Vanuatu
+45,1,Bachelor,American Samoa
+57,1,High School,The former Yugoslav Republic of Macedonia
+36,1,High School,Saint Pierre and Miquelon
+15,1,High School,Panama
+35,0,Masters,Eritrea
+31,1,Masters,Cambodia
+72,1,High School,Guinea
+17,1,Masters,Seychelles
+11,0,Phd,Mozambique
+35,1,Phd,Egypt
+59,1,Phd,Netherlands
+71,1,High School,Namibia
+64,1,Masters,Guatemala
+45,1,Phd,Cameroon
+58,1,Bachelor,Bahamas
+36,0,Phd,Jamaica
+11,1,Masters,Algeria
+65,0,High School,Solomon Islands
+27,0,Phd,Burkina Faso
+46,1,Phd,Congo
+29,0,Phd,Brazil
+23,1,Masters,Guatemala
+39,0,Phd,Zimbabwe
+64,0,High School,Luxembourg
+30,1,Bachelor,Ukraine
+11,1,Phd,Sweden
+42,1,Bachelor,Thailand
+61,0,Masters,Oman
+48,0,Masters,Solomon Islands
+43,1,Phd,Lesotho
+11,0,Phd,Kyrgyzstan
+27,1,Bachelor,Guatemala
+35,0,Masters,Saint Martin (French part)
+46,1,Phd,Chile
+65,1,High School,Comoros
+34,1,Phd,Zimbabwe
+39,1,High School,Lithuania
+22,1,High School,Bhutan
+28,1,High School,Democratic Republic of the Congo
+22,0,Masters,Saudi Arabia
+33,1,High School,Mexico
+77,1,Phd,Seychelles
+65,1,Masters,China
+64,1,Phd,Cabo Verde
+27,1,High School,Comoros
+36,0,High School,Panama
+15,0,Masters,Dominican Republic
+79,0,High School,Indonesia
+14,0,High School,Lebanon
+63,1,Phd,Venezuela (Bolivarian Republic of)
+38,1,Bachelor,Andorra
+54,1,Masters,Thailand
+65,1,Masters,Saint Kitts and Nevis
+53,0,Masters,Slovenia
+71,0,Masters,Republic of Moldova
+60,1,High School,Namibia
+67,1,Bachelor,Luxembourg
+21,0,Phd,Comoros
+13,1,Phd,Aruba
+19,0,Bachelor,Bosnia and Herzegovina
+74,1,Masters,Marshall Islands
+56,1,Masters,Germany
+40,0,Bachelor,Swaziland
+18,0,Phd,Spain
+46,0,Bachelor,Micronesia (Federated States of)
+74,1,High School,Japan
+21,0,Bachelor,Somalia
+65,0,Phd,Brazil
+29,1,Bachelor,Mongolia
+78,0,Bachelor,United Republic of Tanzania
+25,0,Phd,American Samoa
+10,1,Phd,Congo
+19,0,Bachelor,Niger
+13,0,Masters,Mauritius
+33,1,Masters,Egypt
+36,1,High School,Montserrat
+58,0,Phd,France
+51,1,High School,Bangladesh
+46,1,Bachelor,Bahrain
+65,1,Phd,Lao People's Democratic Republic
+55,1,Masters,Denmark
+22,0,Phd,Ireland
+15,1,High School,Mozambique
+31,0,High School,Iran (Islamic Republic of)
+71,1,Phd,Zambia
+75,1,High School,Anguilla
+26,0,High School,Saint Helena
+65,1,Masters,Gabon
+68,0,Bachelor,Mexico
+30,0,Masters,Brunei Darussalam
+16,0,Phd,Latvia
+68,0,Masters,Pitcairn
+59,0,Masters,Ethiopia
+45,1,Phd,China
+56,0,High School,Colombia
+47,1,High School,China Hong Kong Special Administrative Region
+72,0,High School,Mauritania
+12,0,Masters,Turkey
+33,0,High School,Sweden
+58,1,Phd,Burkina Faso
+34,0,High School,Yemen
+75,0,High School,Guernsey
+41,0,Bachelor,American Samoa
+10,0,Bachelor,Tonga
+38,0,Masters,Thailand
+78,1,Bachelor,Morocco
+24,0,Masters,Panama
+25,0,Masters,Cambodia
+61,1,Bachelor,Canada
+44,1,Bachelor,Northern Mariana Islands
+37,1,Bachelor,Wallis and Futuna Islands
+70,0,Phd,Democratic Republic of the Congo
+28,1,Phd,Turks and Caicos Islands
+26,1,Bachelor,El Salvador
+15,0,High School,Niue
+77,0,Phd,Indonesia
+19,1,Phd,Azerbaijan
+23,0,High School,Azerbaijan
+19,0,Bachelor,Bhutan
+62,1,High School,New Zealand
+50,0,Bachelor,State of Palestine
+51,1,High School,Antigua and Barbuda
+49,1,Masters,Kazakhstan
+23,1,High School,Malta
+26,0,Bachelor,El Salvador
+12,0,Phd,Tokelau
+51,1,Masters,Peru
+52,1,Phd,France
+58,1,Masters,New Zealand
+72,1,Phd,Sweden
+22,0,Phd,Croatia
+26,1,Bachelor,Curaçao
+48,1,Bachelor,Guinea
+11,1,Masters,Chad
+57,0,Bachelor,Brazil
+30,1,Bachelor,Guernsey
+73,0,Bachelor,Bahamas
+31,0,Phd,Colombia
+75,1,Bachelor,Lebanon
+20,1,Masters,Algeria
+18,0,High School,Georgia
+15,1,High School,Togo
+11,0,Phd,Antigua and Barbuda
+75,0,Phd,Germany
+29,1,Masters,French Polynesia
+13,0,Masters,Eritrea
+29,0,Masters,United Arab Emirates
+19,1,Bachelor,Libya
+21,0,High School,Liberia
+67,0,Bachelor,Costa Rica
+34,0,Masters,Greece
+14,0,Masters,Cuba
+68,0,Masters,Dominica
+17,1,High School,Tunisia
+59,0,High School,Guernsey
+19,1,High School,Suriname
+60,0,Bachelor,Barbados
+12,1,Bachelor,Bhutan
+64,0,Masters,Wallis and Futuna Islands
+27,0,Phd,Saint Barthélemy
