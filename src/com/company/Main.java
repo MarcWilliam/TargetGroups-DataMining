@@ -130,7 +130,7 @@ public class Main {
 
         public void push(NdimPoint point) {
             data[last++] = point;
-            sum.sum(point);
+            sum = sum.sum(point);
         }
 
         public NdimPoint calcNewCentroid() {
@@ -159,7 +159,7 @@ public class Main {
 
             NdimPoint ret = new NdimPoint(new double[this.dims.length]);
             for (int i = 0; i < this.dims.length; i++) {
-                ret.dims[i] = Math.round(this.dims[i] / div);
+                ret.dims[i] = this.dims[i] / div;
             }
             return ret;
         }
