@@ -4,13 +4,14 @@ import com.opencsv.*;
 import javafx.util.Pair;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
 
     public static void main(String[] args) throws IOException {
-
+        /*
         String[] labels = {"something", "somethingelse"};
 
         NdimPoint data[] = {
@@ -19,31 +20,37 @@ public class Main {
                 new NdimPoint(1, 4),
                 new NdimPoint(2, 4),
         };
-
-        /*
-        Pair<String[],NdimPoint[]> tmp = parseFile("data.csv");
-        String[] labels = tmp.getKey();
-        NdimPoint data = tmp.getValue();
         */
 
-        Cluster[] clusters = kmean(labels, data, 2);
+        Pair<String[], NdimPoint[]> tmp = parseFile("data2.csv");
+        String[] labels = tmp.getKey();
+        NdimPoint[] data = tmp.getValue();
+
+
+        Cluster[] clusters = kmean(labels, data, 5);
 
     }
 
 
     static Pair<String[], NdimPoint[]> parseFile(String filePath) throws IOException {
         // <<<<<<<<<<<<<<<<<< Abdelhamed ur job starts here feel free to delete the body just try to keep the function signature the same
-        NdimPoint data[] = {};
+        ArrayList<NdimPoint> data = new ArrayList<>(500);
         String labels[] = {};
 
         CSVReader reader = new CSVReader(new FileReader(filePath));
         String[] nextLine;
+        boolean flagLabel = true;
+
         while ((nextLine = reader.readNext()) != null) {
-            // nextLine[] is an array of values from the line
-            System.out.println(nextLine[0] + nextLine[1]);
+            if (flagLabel) {
+                flagLabel = false;
+                labels = nextLine;
+            } else {
+                data.add(new NdimPoint(Arrays.stream(nextLine).mapToDouble(Double::parseDouble).toArray()));
+            }
         }
 
-        return new Pair<>(labels, data);
+        return new Pair<>(labels, data.toArray(new NdimPoint[data.size()]));
     }
 
 
@@ -142,6 +149,7 @@ public class Main {
         public NdimPoint(double... dims) {
             this.dims = dims;
         }
+
 
         public boolean equals(NdimPoint obj) {
             return Arrays.equals(obj.dims, this.dims);
