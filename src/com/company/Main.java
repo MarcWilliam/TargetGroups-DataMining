@@ -3,6 +3,7 @@ package com.company;
 import com.opencsv.*;
 import javafx.util.Pair;
 
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -122,7 +123,7 @@ public class Main {
 
             char[] ar = new char[tmp.length() * 2];
             Arrays.fill(ar, '-');
-            System.out.println();
+            System.out.println(ANSI_RED + (clusters[i].last * 100 / clusters[i].data.length) + "%" + ANSI_RESET + " of the data set is in this cluster");
             System.out.println(tmp);
             System.out.println(ar);
         }
