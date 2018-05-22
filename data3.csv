@@ -1,0 +1,501 @@
+Age,Gender,Education Level
+48,0,Bachelor
+72,0,Phd
+60,1,High School
+24,1,Masters
+22,0,High School
+76,1,Masters
+12,0,Phd
+41,0,Bachelor
+36,1,Masters
+18,0,Masters
+31,0,Bachelor
+38,0,Phd
+59,1,Bachelor
+52,0,Phd
+49,0,High School
+73,0,Phd
+65,1,High School
+53,0,Phd
+78,1,Phd
+75,0,High School
+77,1,High School
+67,1,High School
+29,1,High School
+68,1,High School
+71,1,Masters
+56,0,Phd
+34,1,Masters
+42,0,Masters
+39,0,High School
+45,0,High School
+15,1,High School
+32,0,Bachelor
+35,0,Phd
+80,1,High School
+14,0,Phd
+61,1,High School
+13,1,Phd
+21,0,High School
+40,0,Masters
+46,0,Masters
+54,0,High School
+28,0,Bachelor
+69,1,High School
+63,0,High School
+20,0,Phd
+26,1,Phd
+62,0,High School
+17,1,Masters
+37,0,Phd
+50,0,High School
+47,0,High School
+64,0,Masters
+55,0,High School
+70,0,Masters
+16,0,Phd
+19,1,Masters
+57,0,Phd
+43,0,Masters
+27,0,High School
+25,1,Phd
+10,0,Phd
+44,1,Phd
+33,0,Masters
+79,0,Phd
+66,0,Masters
+58,0,Masters
+51,1,Phd
+11,1,High School
+23,0,Phd
+30,0,Phd
+74,1,Masters
+34,0,High School
+27,0,Masters
+54,0,Masters
+75,0,High School
+47,1,Masters
+75,0,Masters
+47,1,High School
+13,0,High School
+70,1,Bachelor
+74,1,Masters
+75,1,Bachelor
+26,0,High School
+77,0,Masters
+69,1,High School
+21,1,Phd
+17,0,Masters
+45,0,Masters
+54,0,High School
+62,0,High School
+52,0,Phd
+38,1,Phd
+34,1,High School
+20,1,High School
+65,1,Masters
+75,1,Phd
+67,1,Phd
+41,0,Masters
+52,1,High School
+54,0,High School
+15,0,Bachelor
+13,1,Masters
+52,1,Bachelor
+18,1,Masters
+10,0,Masters
+43,1,Masters
+28,0,High School
+64,0,High School
+22,1,High School
+56,0,High School
+66,0,High School
+61,1,Phd
+79,0,High School
+25,1,High School
+44,0,High School
+33,0,High School
+22,1,Phd
+63,1,Bachelor
+33,1,Bachelor
+28,0,Masters
+75,0,Phd
+24,1,High School
+62,0,High School
+51,1,High School
+38,0,Bachelor
+68,0,Bachelor
+11,0,Phd
+42,1,Masters
+36,1,Phd
+77,0,Phd
+31,1,Bachelor
+47,0,Phd
+70,0,Bachelor
+32,1,Phd
+48,1,High School
+56,1,Bachelor
+58,1,Phd
+41,0,Bachelor
+33,1,Phd
+56,0,Phd
+33,0,High School
+40,1,High School
+34,1,Phd
+67,1,Masters
+20,0,Bachelor
+74,1,Bachelor
+35,0,High School
+10,0,Phd
+11,0,Bachelor
+31,1,Bachelor
+55,1,Phd
+61,0,Bachelor
+77,1,Bachelor
+35,1,High School
+24,1,High School
+51,0,Masters
+18,1,Phd
+25,1,Bachelor
+16,0,Phd
+34,0,Bachelor
+62,1,Bachelor
+26,1,Masters
+37,1,Bachelor
+54,1,Masters
+74,1,High School
+18,0,Masters
+71,1,Bachelor
+35,0,Phd
+38,1,Masters
+74,0,High School
+31,1,High School
+56,1,High School
+50,1,Bachelor
+55,0,Bachelor
+17,0,Bachelor
+53,0,Phd
+26,0,Phd
+16,1,Masters
+12,0,Masters
+29,0,High School
+50,0,Phd
+37,1,Bachelor
+13,1,Masters
+56,1,Bachelor
+72,0,High School
+21,0,Phd
+35,1,Phd
+72,1,Masters
+40,1,Masters
+13,1,Bachelor
+27,0,Bachelor
+65,0,Masters
+39,0,Masters
+28,1,Phd
+48,1,High School
+22,0,Masters
+27,1,Phd
+74,0,High School
+65,0,High School
+37,0,Masters
+54,1,Masters
+36,1,Masters
+50,0,High School
+63,0,Bachelor
+13,0,High School
+44,0,Masters
+35,0,Masters
+19,1,Phd
+31,1,High School
+68,1,Phd
+40,1,Phd
+34,0,Phd
+28,0,High School
+53,1,Phd
+48,0,Phd
+57,1,Bachelor
+15,0,Masters
+22,1,Masters
+29,1,Bachelor
+40,0,Phd
+46,0,High School
+10,0,High School
+61,1,Bachelor
+65,1,High School
+28,1,Bachelor
+12,1,Phd
+42,0,High School
+38,1,High School
+58,0,Phd
+26,1,Masters
+38,0,Phd
+13,0,High School
+47,0,Bachelor
+48,1,Bachelor
+29,0,Phd
+40,1,Bachelor
+10,1,Masters
+58,0,Bachelor
+12,1,High School
+46,0,Bachelor
+46,1,Bachelor
+37,1,High School
+35,0,Bachelor
+46,1,Phd
+43,1,Phd
+69,1,Masters
+45,1,Phd
+78,0,Masters
+51,1,Masters
+70,0,Bachelor
+32,1,High School
+67,1,Bachelor
+74,1,Bachelor
+79,0,High School
+60,1,Masters
+66,0,Bachelor
+42,0,Phd
+76,1,High School
+16,0,Bachelor
+64,0,Bachelor
+50,1,Bachelor
+18,1,Phd
+26,0,Phd
+52,0,Phd
+39,0,High School
+62,1,Bachelor
+14,1,Phd
+76,1,High School
+78,0,Phd
+75,0,Phd
+70,1,Phd
+65,0,High School
+21,0,Masters
+58,1,Phd
+67,1,Masters
+45,0,Phd
+33,1,Masters
+55,0,Phd
+28,0,Masters
+16,1,Bachelor
+60,0,Masters
+13,0,Phd
+23,0,High School
+52,0,Masters
+15,1,High School
+53,1,Phd
+47,0,High School
+58,0,Masters
+65,0,Masters
+30,1,Masters
+21,1,High School
+34,0,Masters
+72,1,Masters
+57,1,Masters
+80,0,Bachelor
+23,0,High School
+51,1,Phd
+49,0,Bachelor
+22,0,Masters
+71,0,Phd
+38,0,Masters
+47,1,Masters
+54,0,Bachelor
+76,0,High School
+17,0,Masters
+73,0,Bachelor
+51,1,Bachelor
+78,0,High School
+73,0,High School
+16,0,High School
+18,1,High School
+20,1,Masters
+10,1,Bachelor
+67,0,Masters
+13,0,High School
+16,1,Masters
+78,0,Bachelor
+19,1,Bachelor
+18,0,Bachelor
+73,1,High School
+12,1,Phd
+21,1,Phd
+67,1,High School
+53,0,High School
+34,0,Masters
+73,1,High School
+48,0,Phd
+21,1,Phd
+34,1,Phd
+60,1,High School
+65,0,Masters
+72,0,Masters
+46,1,Phd
+36,1,Masters
+69,1,Phd
+26,1,High School
+28,0,Masters
+45,1,Phd
+26,1,Phd
+39,1,Masters
+45,1,Bachelor
+57,1,High School
+36,1,High School
+15,1,High School
+35,0,Masters
+31,1,Masters
+72,1,High School
+17,1,Masters
+11,0,Phd
+35,1,Phd
+59,1,Phd
+71,1,High School
+64,1,Masters
+45,1,Phd
+58,1,Bachelor
+36,0,Phd
+11,1,Masters
+65,0,High School
+27,0,Phd
+46,1,Phd
+29,0,Phd
+23,1,Masters
+39,0,Phd
+64,0,High School
+30,1,Bachelor
+11,1,Phd
+42,1,Bachelor
+61,0,Masters
+48,0,Masters
+43,1,Phd
+11,0,Phd
+27,1,Bachelor
+35,0,Masters
+46,1,Phd
+65,1,High School
+34,1,Phd
+39,1,High School
+22,1,High School
+28,1,High School
+22,0,Masters
+33,1,High School
+77,1,Phd
+65,1,Masters
+64,1,Phd
+27,1,High School
+36,0,High School
+15,0,Masters
+79,0,High School
+14,0,High School
+63,1,Phd
+38,1,Bachelor
+54,1,Masters
+65,1,Masters
+53,0,Masters
+71,0,Masters
+60,1,High School
+67,1,Bachelor
+21,0,Phd
+13,1,Phd
+19,0,Bachelor
+74,1,Masters
+56,1,Masters
+40,0,Bachelor
+18,0,Phd
+46,0,Bachelor
+74,1,High School
+21,0,Bachelor
+65,0,Phd
+29,1,Bachelor
+78,0,Bachelor
+25,0,Phd
+10,1,Phd
+19,0,Bachelor
+13,0,Masters
+33,1,Masters
+36,1,High School
+58,0,Phd
+51,1,High School
+46,1,Bachelor
+65,1,Phd
+55,1,Masters
+22,0,Phd
+15,1,High School
+31,0,High School
+71,1,Phd
+75,1,High School
+26,0,High School
+65,1,Masters
+68,0,Bachelor
+30,0,Masters
+16,0,Phd
+68,0,Masters
+59,0,Masters
+45,1,Phd
+56,0,High School
+47,1,High School
+72,0,High School
+12,0,Masters
+33,0,High School
+58,1,Phd
+34,0,High School
+75,0,High School
+41,0,Bachelor
+10,0,Bachelor
+38,0,Masters
+78,1,Bachelor
+24,0,Masters
+25,0,Masters
+61,1,Bachelor
+44,1,Bachelor
+37,1,Bachelor
+70,0,Phd
+28,1,Phd
+26,1,Bachelor
+15,0,High School
+77,0,Phd
+19,1,Phd
+23,0,High School
+19,0,Bachelor
+62,1,High School
+50,0,Bachelor
+51,1,High School
+49,1,Masters
+23,1,High School
+26,0,Bachelor
+12,0,Phd
+51,1,Masters
+52,1,Phd
+58,1,Masters
+72,1,Phd
+22,0,Phd
+26,1,Bachelor
+48,1,Bachelor
+11,1,Masters
+57,0,Bachelor
+30,1,Bachelor
+73,0,Bachelor
+31,0,Phd
+75,1,Bachelor
+20,1,Masters
+18,0,High School
+15,1,High School
+11,0,Phd
+75,0,Phd
+29,1,Masters
+13,0,Masters
+29,0,Masters
+19,1,Bachelor
+21,0,High School
+67,0,Bachelor
+34,0,Masters
+14,0,Masters
+68,0,Masters
+17,1,High School
+59,0,High School
+19,1,High School
+60,0,Bachelor
+12,1,Bachelor
+64,0,Masters
+27,0,Phd

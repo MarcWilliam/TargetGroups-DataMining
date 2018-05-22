@@ -7,43 +7,78 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class Main {
 
+    public static HashMap<String, Pair<Label, Integer>> entriesMap = new HashMap<>();
+
     public static void main(String[] args) throws IOException {
 
-        Pair<String[], NdimPoint[]> tmp = parseFile("data2.csv");
-        String[] labels = tmp.getKey();
+        Pair<Label[], NdimPoint[]> tmp = parseFile("data3.csv");
+        Label[] labels = tmp.getKey();
         NdimPoint[] data = tmp.getValue();
-
-
         Cluster[] clusters = kmean(labels, data, 5);
         PrintClusters(labels, clusters, -1);
     }
 
-
-    static Pair<String[], NdimPoint[]> parseFile(String filePath) throws IOException {
+    static Pair<Label[], NdimPoint[]> parseFile(String filePath) throws IOException {
         ArrayList<NdimPoint> data = new ArrayList<>(500);
-        String labels[] = {};
+        Label[] labels;
 
         CSVReader reader = new CSVReader(new FileReader(filePath));
+
+        labels = Arrays.stream(reader.readNext()).map((String label) -> {
+            return new Label(label);
+        }).toArray(Label[]::new);
+
         String[] nextLine;
-        boolean flagLabel = true;
+        String[] NdimPointData;
+        boolean firstLineFlag = true;
 
         while ((nextLine = reader.readNext()) != null) {
-            if (flagLabel) {
-                flagLabel = false;
-                labels = nextLine;
-            } else {
-                data.add(new NdimPoint(Arrays.stream(nextLine).mapToDouble(Double::parseDouble).toArray()));
+            NdimPointData = new String[labels.length];
+            for (int i = 0; i < nextLine.length; i++) {
+                String value = nextLine[i];
+                if (!value.matches("\\d+")) {
+                    if (!Main.entriesMap.containsKey(value)) {
+                        Main.entriesMap.put(value, new Pair<>(labels[i], labels[i].getDistinctIndex()));
+                        labels[i].setDistinctIndex(labels[i].getDistinctIndex() + 1);
+                    }
+                    NdimPointData[i] = String.valueOf(Main.entriesMap.get(value).getValue());
+                } else {
+                    NdimPointData[i] = value;
+                }
+            }
+
+            /* NdimPointData = Arrays.stream(nextLine).map(value -> {
+
+                if (!value.matches("\\d+")) {
+                    if (!Main.entriesMap.containsKey(value)) {
+                        Main.entriesMap.put(value, new Pair<>(labels[2], Main.entriesMap.size() + 1));
+                    }
+                    return String.valueOf(Main.entriesMap.get(value).getValue());
+                }
+                return value;
+            }).toArray(String[]::new);*/
+            data.add(new NdimPoint(Arrays.stream(NdimPointData).mapToDouble(Double::parseDouble).toArray()));
+
+            if (firstLineFlag) {
+                for (int j = 0; j < nextLine.length; j++) {
+                    if (!nextLine[j].matches("\\d+")) {
+                        labels[j].setType(String.class);
+                    } else {
+                        labels[j].setType(Double.class);
+                    }
+                }
+                firstLineFlag = false;
             }
         }
-
         return new Pair<>(labels, data.toArray(new NdimPoint[data.size()]));
     }
 
-
-    static Cluster[] kmean(String labels[], NdimPoint data[], int noClusters) {
+    static Cluster[] kmean(Label labels[], NdimPoint data[], int noClusters) {
 
         int n = 0, noOCorrectCentroid;
 
@@ -91,8 +126,7 @@ public class Main {
         return clusters;
     }
 
-
-    private static void PrintClusters(String labels[], Cluster clusters[], int n) {
+    private static void PrintClusters(Label labels[], Cluster clusters[], int n) {
 
         String ANSI_RESET = "\u001B[0m";
         String ANSI_BLACK = "\u001B[30m";
@@ -110,9 +144,24 @@ public class Main {
         } else {
             System.out.println("\n\n============================================= \tLoop " + n + "\t ==============================================");
         }
+
         for (int i = 0; i < clusters.length; i++) {
             for (int j = 0; j < clusters[i].centroid.dims.length; j++) {
-                System.out.print(labels[j] + ": " + ANSI_CYAN + Math.round(clusters[i].centroid.dims[j]) + ANSI_RESET + "\t\t");
+                String centroidValue = "";
+                if (labels[j].getType().equals(String.class)) {
+                    for (Entry<String, Pair<Label, Integer>> entry : Main.entriesMap.entrySet()) {
+                        String key = entry.getKey();
+                        Pair<Label, Integer> item = entry.getValue();
+                        if (labels[j].getText().equals(item.getKey().getText()) && Math.round(clusters[i].centroid.dims[j]) == item.getValue()) {
+                            centroidValue = key;
+                        }
+                    }
+
+                } else {
+                    centroidValue = String.valueOf(Math.round(clusters[i].centroid.dims[j]));
+                }
+
+                System.out.print(labels[j].getText() + ": " + ANSI_CYAN + centroidValue + ANSI_RESET + "\t\t");
             }
 
             String tmp = Arrays.toString(clusters[i].data)
@@ -131,8 +180,52 @@ public class Main {
         System.out.println();
     }
 
+    static class Label {
+
+        private String text;
+        private Class type;
+        private int distinctIndex;
+
+        public Label(String text) {
+            this.text = text;
+            this.distinctIndex = 1;
+        }
+
+        public Label(String text, Class type) {
+            this.text = text;
+            this.type = type;
+            this.distinctIndex = 1;
+        }
+
+        public Label(String text, Class type, int distinctIndex) {
+            this.text = text;
+            this.type = type;
+            this.distinctIndex = distinctIndex;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public Class getType() {
+            return type;
+        }
+
+        public int getDistinctIndex() {
+            return distinctIndex;
+        }
+
+        public void setType(Class type) {
+            this.type = type;
+        }
+
+        public void setDistinctIndex(int distinctIndex) {
+            this.distinctIndex = distinctIndex;
+        }
+    }
 
     static class Cluster {
+
         NdimPoint data[], centroid, sum;
         int last;
 
@@ -156,14 +249,13 @@ public class Main {
         }
     }
 
-
     static class NdimPoint {
+
         double dims[];
 
         public NdimPoint(double... dims) {
             this.dims = dims;
         }
-
 
         public boolean equals(NdimPoint obj) {
             return Arrays.equals(obj.dims, this.dims);
