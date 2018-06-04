@@ -16,11 +16,19 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Pair<Label[], NdimPoint[]> tmp = parseFile("data3.csv");
+
+        Pair<Label[], NdimPoint[]> tmp = parseFile(
+                // source of data sheets
+                //https://catalog.data.gov/dataset?q=education+age+gender&sort=views_recent+desc&res_format=CSV&as_sfid=AAAAAAWrcApUV3CPP00NLoWQSRorWRwc0YpkcquUjUOWBKUz1zWfkPwaO_LxGzoNWL5OV9aAm-oo3tfqQzBonDuXonc0wb_Lsl7SFF6SdxKiEzxS7W5ZzazBv8wUM5vfVLj6Yh4%3D&as_fid=a8ee4b572e8a8d7ff57f32462dc9f17212d17433&ext_location=&ext_bbox=&ext_prev_extent=-142.03125%2C8.754794702435618%2C-59.0625%2C61.77312286453146
+                //"data3.csv"
+                "Behavioral_Risk_Factor_Data__Tobacco_Use__2011_to_presentc.csv"
+                //"Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv"
+        );
         Label[] labels = tmp.getKey();
         NdimPoint[] data = tmp.getValue();
-        Cluster[] clusters = kmean(labels, data, 5);
-        PrintClusters(labels, clusters, -1);
+        Cluster[] clusters = kmean(labels, data, 2);
+
+        PrintClusters(labels, clusters, -1, false);
     }
 
     static Pair<Label[], NdimPoint[]> parseFile(String filePath) throws IOException {
@@ -119,14 +127,14 @@ public class Main {
                 }
             }
 
-            PrintClusters(labels, clusters, n);
+            //PrintClusters(labels, clusters, n,true);
 
         } while (noOCorrectCentroid < newCentroids.length);
 
         return clusters;
     }
 
-    private static void PrintClusters(Label labels[], Cluster clusters[], int n) {
+    private static void PrintClusters(Label labels[], Cluster clusters[], int n, boolean printClusterData) {
 
         String ANSI_RESET = "\u001B[0m";
         String ANSI_BLACK = "\u001B[30m";
@@ -140,13 +148,33 @@ public class Main {
 
         //System.out.print(ANSI_BLUE);
         if (n == -1) {
-            System.out.println(ANSI_CYAN + "RESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\t" + ANSI_RESET);
+            //System.out.println(ANSI_CYAN + "RESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\tRESULT\t" + ANSI_RESET);
         } else {
             System.out.println("\n\n============================================= \tLoop " + n + "\t ==============================================");
         }
 
+
+        String leftAlignFormat = "%-2s ";
+        String[] tempLabels = new String[labels.length + 2];
+        tempLabels[0] = "n*";
+        tempLabels[tempLabels.length - 1] = "% from total data";
+
+        for (int i = 0; i < labels.length; i++) {
+            tempLabels[i + 1] = labels[i].getText();
+            leftAlignFormat += ANSI_CYAN + "|" + ANSI_RESET + " %-18.18s ";
+        }
+        leftAlignFormat += ANSI_CYAN + "|" + ANSI_RESET + " %4s %n";
+
+        System.out.format(leftAlignFormat, tempLabels);
+        System.out.println();
+        System.out.print(ANSI_RESET);
+
+        String[] dataToPrint = new String[clusters[0].centroid.dims.length + 2];
+
         for (int i = 0; i < clusters.length; i++) {
+            dataToPrint[0] = "" + i;
             for (int j = 0; j < clusters[i].centroid.dims.length; j++) {
+
                 String centroidValue = "";
                 if (labels[j].getType().equals(String.class)) {
                     for (Entry<String, Pair<Label, Integer>> entry : Main.entriesMap.entrySet()) {
@@ -160,21 +188,25 @@ public class Main {
                 } else {
                     centroidValue = String.valueOf(Math.round(clusters[i].centroid.dims[j]));
                 }
-
-                System.out.print(labels[j].getText() + ": " + ANSI_CYAN + centroidValue + ANSI_RESET + "\t\t");
+                dataToPrint[j + 1] = centroidValue;
+                //System.out.print(labels[j].getText() + ": " + ANSI_CYAN + centroidValue + ANSI_RESET + "\t\t");
             }
+            dataToPrint[dataToPrint.length - 1] = (clusters[i].last * 100 / clusters[i].data.length) + "%";
+            System.out.format(leftAlignFormat, dataToPrint);
+            //System.out.println(ANSI_RED + (clusters[i].last * 100 / clusters[i].data.length) + "%" + ANSI_RESET + " of the data set is in this cluster");
 
-            String tmp = Arrays.toString(clusters[i].data)
-                    .replace(", ", "\t")
-                    .replace("]", "")
-                    .replace("[", "")
-                    .replace("\tnull", "");
+            if (printClusterData) {
+                String tmp = Arrays.toString(clusters[i].data)
+                        .replace(", ", "\t")
+                        .replace("]", "")
+                        .replace("[", "")
+                        .replace("\tnull", "");
 
-            char[] ar = new char[tmp.length() * 2];
-            Arrays.fill(ar, '-');
-            System.out.println(ANSI_RED + (clusters[i].last * 100 / clusters[i].data.length) + "%" + ANSI_RESET + " of the data set is in this cluster");
-            System.out.println(tmp);
-            System.out.println(ar);
+                char[] ar = new char[tmp.length() * 2];
+                Arrays.fill(ar, '-');
+                System.out.println(tmp);
+                System.out.println(ar);
+            }
         }
 
         System.out.println();
@@ -227,7 +259,7 @@ public class Main {
     static class Cluster {
 
         NdimPoint data[], centroid, sum;
-        int last;
+        int last = 0;
 
         public Cluster(NdimPoint centroid, int size) {
             this.data = new NdimPoint[size];
